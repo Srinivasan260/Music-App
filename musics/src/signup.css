@@ -1,0 +1,48 @@
+.signup{
+    color:white;
+
+}
+
+
+
+  h3{
+
+    text-align: left;
+    margin-left: 30%;
+   
+    color:rgb(255, 245, 245);
+  }
+  #img231{
+    margin-left: 62%;
+    margin-top: 7%;
+  }
+
+ #tr{
+  margin-left: 35%;
+
+
+ }
+ #td{
+  margin-left: -38%;
+ }
+ .btn{
+  margin-left: 37%;
+  margin-top: 3%;
+ }
+ .tre{
+  color:red;
+ }
+ #signup-input{
+  margin-left: 5%;
+ }
+ #signup-container{
+  
+  width:400px;
+  height :600px;
+  color:rgb(237, 243, 246);
+  background-color:  rgb(24, 30, 35);
+  margin-top: -33%;
+  border-radius: 5%;
+  margin-left: 25%;
+
+ }

@@ -1,0 +1,60 @@
+#gt {
+
+    margin-left: 20%;
+    margin-top: -65%;
+}
+
+body {
+    background-color: black;
+}
+
+h2 {
+
+    color: white;
+    margin-left: -7%;
+    margin-right: 5%;
+    margin-top: 2%;
+
+}
+
+
+#sign {
+    margin-top: -5.5%;
+    margin-left: 85%;
+
+
+}
+
+#logout {
+
+    size: 20px;
+    margin-left: 85%;
+    margin-top: -1%;
+
+}
+
+#login {
+    margin-left: 78%;
+}
+
+#h4 {
+
+    margin-top: -3%;
+    color: aqua;
+    margin-left: 35%;
+    font-size: x-large;
+}
+
+#acc {
+
+
+    font-size: x-large;
+    color: beige;
+    margin-top: 3%;
+
+}
+
+#na {
+    margin-top: -2.5%;
+    margin-left: 2.5%;
+}

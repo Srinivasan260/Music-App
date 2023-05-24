@@ -1,0 +1,17 @@
+#update-container{
+    height: 530px;
+    width:400px;
+    color:rgb(232, 229, 229);
+    background-color: rgb(36, 38, 41);
+    margin-top: 5%;
+    margin-left: -0.5%;
+    border-radius: 5%;
+}
+#update-form{
+    margin-left: 5%;
+    margin-top: 8%;
+}
+#h4-update{
+    font-size: 30px;
+    margin-left: 33%;
+}
