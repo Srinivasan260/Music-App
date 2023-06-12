@@ -14,6 +14,24 @@
 
   
 }
+/* #span-home{
+  
+} */
+#h6-lay{
+  margin-top: 165%;
+  margin-left: 10%;
+ 
+}
+
+ #h6-lay #face:hover{
+   color:rgb(113, 17, 113)
+}
+#h6-lay #insta:hover{
+  color:rgb(113, 17, 113)
+}
+#h6-lay #twitter:hover{
+  color:rgb(113, 17, 113)
+}
 
 
 .container{
@@ -25,7 +43,13 @@
 
   margin-left: 12%;
   font-size: 180%;
-  
+  /* color:aliceblue;
+   */
+}
+
+a:hover{
+
+  color:aliceblue;
 }
 #li2{
 

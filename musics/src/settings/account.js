@@ -6,14 +6,19 @@ import account from './mobile.png'
 const Account = () => {
   const auth = localStorage.getItem('user')
 
-  const [Content, setContent] = useState();
+   const [Content, setContent] = useState('clear');
+   const [Ads, setAds] = useState('On');
 
 
-
-  const setButt = () => {
-    <h3>hi thid id srini</h3>
-
+  const setCon =()=>{
+    setAds('Off')
   }
+  
+   const  setButt = () => {
+     setContent('cleared')
+
+   }
+
   return (
     <>
       <div id="tr">
@@ -36,9 +41,9 @@ const Account = () => {
             <h6 id="h6-account">  Language <i id="acc-language" class="bi bi-globe2"></i></h6><br></br>
 
 
-            <h6 id="h6-account"> Clear Search history </h6> <Button variant="primary" id="acc-btn">Clear</Button><br></br>
+            <h6 id="h6-account"> Clear Search history </h6> <Button variant="primary" id="acc-btn" onClick={()=>{setButt()}}>{Content}</Button><br></br>
 
-            <h6 id="h6-account">  Keep Ads   </h6><Button variant="primary" id="acc-btn">Off</Button><br></br>
+            <h6 id="h6-account">  Keep Ads   </h6><Button variant="primary" id="acc-btn" onClick={()=>{setCon()}}>{Ads}</Button><br></br>
 
           </div>
 

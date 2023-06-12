@@ -1,22 +1,22 @@
 import React from "react";
 import { ReactDOM } from "react";
 import './trendingsongs.css'
-import ps2 from './ps22.jpg';
-import pathu from './pathu.jpg';
-import thunivu from './thunivu.jpg';
-import varisu from './varisu.jpg';
-import leo from './leo2.jpg';
-import lovetoday from './love2.jpg';
-import dada from './dada.jpg';
-import vaathi from './vaathi.webp';
-import man from './man.webp';
-import dada2 from './dada2.webp';
+import ps2 from './images/ps22.jpg';
+import pathu from './images/pathu.jpg';
+import thunivu from './images/thunivu.jpg';
+import varisu from './images/varisu.jpg';
+import leo from './images/leo2.jpg';
+import lovetoday from './images/love2.jpg';
+import dada from './images/dada.jpg';
+import vaathi from './images/vaathi.webp';
+import man from './images/man.webp';
+import dada2 from './images/dada2.webp';
 
 const Got = () => {
     return (
         <>
             <div id="re">
-
+                 <br></br><br></br>
                 <h3>Trending Songs</h3><br></br>
 
                 <h5>#1 on Trending for music</h5><br></br>

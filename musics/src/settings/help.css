@@ -9,7 +9,7 @@
     margin-left: -17%;
     color:grey;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 12%;
+    margin-top: 7%;
 
 }
 
@@ -29,4 +29,13 @@
 #img204{
     margin-left: 50%;
     margin-top: 3%;
+}
+
+.help-h6{
+
+    margin-left: 0%;
+    margin-top: 5%;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;
 }

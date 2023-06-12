@@ -1,0 +1,35 @@
+services:
+ 
+  frontend:
+      build : 'musics/.'
+      stdin_open : true
+      ports : 
+       - "3000:3000"
+      networks:
+         - mern-app
+      
+
+  backend:
+      build : 'backend/.'
+      ports : 
+         - "3003:3003"
+      depends_on:
+         - mongo
+      networks:
+         - mern-app
+  mongo:
+      image: mongo
+      restart: always
+      ports : 
+       - "27017:27017"
+      networks:
+         - mern-app
+      volumes:
+         - mongo-data:/data/db
+networks:
+   mern-app:
+    driver : bridge         
+volumes:
+   mongo-data:
+    driver : local   
+      

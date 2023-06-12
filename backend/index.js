@@ -1,5 +1,5 @@
 const express = require('express')
-const cookieParser = require('cookie-parser')
+var cookieParser = require('cookie-parser')
 const jwd = require('jsonwebtoken')
 
 
@@ -13,6 +13,7 @@ const { hashPass, logPas } = require('./conn/hashing')
 // const Update =require('./conn/update')
 const Login = require('./conn/login')
 const signup = require('./conn/signupdetails')
+const Problem = require('./conn/problem')
 
 
 const session = {}
@@ -66,19 +67,23 @@ app.post('/login', async (req, res) => {
         const email = req.body.email
         let datas = await Login.findOne({ email })
         let pass = logPas(passwor, datas.password)
-        console.log('56')
+       
         console.log(datas)
         if (datas && pass) {
+            
             const user = { name: email }
-            const gut = jwd.sign(user, process.env.ACCESS_TOKEN)
-            // res.json({access_token : gut})
-            console.log('56')
+            console.log(email)
+            const token = jwd.sign(user, process.env.ACCESS_TOKEN)
+            
+            res.cookie('jwt', token, { httpOnly: true });
+            // res.json({access_token : token})
+          
             datas = datas.toObject()
             delete datas.password
+            console.log(datas)
             res.send(datas)
-
-
-            console.log({ access_token: gut })
+            console.log({ access_token: token })
+           
         }
         else {
             res.send('nothing')
@@ -127,10 +132,10 @@ app.get('/ge', authenticate, async (req, res) => {
 
 })
 
-app.put('/update/:email', async (req, res) => {
-    
-    let data = await signup.updateOne({email:req.params.email },{ $set: req.body })
-    console.log(req.params.email)
+app.put('/update/:_id', async (req, res) => {
+    console.log(req.params._id)
+    console.log(req.body.email)
+    let data = await signup.updateOne({_id:req.params._id },{ $set:{ email : req.body.email, name:req.body.name , Age:req.body.Age , Phn:req.body.Phn} })   
     console.log(data)
     res.send(data)
     
@@ -151,6 +156,27 @@ app.get('/gett/:_id', async (req, res) => {
         res.send('this is invalid user')
     }
 })
+
+
+app.post('/prob/:email', async (req, res) => {
+
+    
+    console.log(req.body)
+    const email = req.params.email
+    const problem = req.body.Problem
+    console.log(email,problem)
+    
+    let data = new Problem({problem,email})
+
+  
+    console.log(data)
+    let data2 = await data.save()
+    console.log(data2)
+    res.send(data2)
+})
+
+
+
 
 
 

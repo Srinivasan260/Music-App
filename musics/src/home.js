@@ -3,31 +3,31 @@ import { Outlet, Link, useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import { ReactDOM } from "react";
 import './home.css';
-import ani from './ann.jpg';
-import master from './master.webp';
-import vikram from './vikram.jpg';
-import petta from './3.jpg';
-import beast from './kathi.jpg';
-import u1 from './u2.jpg';
-import mankatha from './manaktha.jpg';
-import lovetoday from './love today.jpg';
-import aarabam from './aarambam.jpg';
-import manadu from './mandu.jpg';
-import arr1 from './ar2.jpg';
-import ps1 from './Ps1.jpg';
-import pathuthala from './pathuyhala.jpg';
-import vtk from './vtk.jpg';
-import bigil from './bigil.jpg';
-import harris from './harris.jpg';
-import varanam from './v2.jpg';
-import yennai from './yennai.jpg';
-import thuppaki from './th2.jpg';
-import nanban from './nan.jpg';
-import sana from './se.jpg';
-import kabali from './k3.jpg';
-import iravi from './iravi.jpg';
-import mahaan from './mahaan.webp';
-import vada from './vadachennai.webp';
+import ani from './images/ann.jpg';
+import master from './images/master.webp';
+import vikram from './images/vikram.jpg';
+import petta from './images/3.jpg';
+import beast from './images/kathi.jpg';
+import u1 from './images/u2.jpg';
+import mankatha from './images/manaktha.jpg';
+import lovetoday from './images/love today.jpg';
+import aarabam from './images/aarambam.jpg';
+import manadu from './images/mandu.jpg';
+import arr1 from './images/ar2.jpg';
+import ps1 from './images/Ps1.jpg';
+import pathuthala from './images/pathuyhala.jpg';
+import vtk from './images/vtk.jpg';
+import bigil from './images/bigil.jpg';
+import harris from './images/harris.jpg';
+import varanam from './images/v2.jpg';
+import yennai from './images/yennai.jpg';
+import thuppaki from './images/th2.jpg';
+import nanban from './images/nan.jpg';
+import sana from './images/se.jpg';
+import kabali from './images/k3.jpg';
+import iravi from './images/iravi.jpg';
+import mahaan from './images/mahaan.webp';
+import vada from './images/vadachennai.webp';
 
 
 
@@ -112,19 +112,19 @@ const Home = () => {
         <h2> ARR Magics</h2><br></br>
         <div class="row">
           <div class="column">
-            <Link to="/Arr1"> <img src={arr1} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/arr1"> <img src={arr1} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"><img src={ps1} height="200px" width="180px"></img> </Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/arr2"><img src={ps1} height="200px" width="180px"></img> </Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"><img src={pathuthala} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/arr3"><img src={pathuthala} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"><img src={vtk} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/arr4"><img src={vtk} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"><img src={bigil} height="200px" width="180px"></img></Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/arr5"><img src={bigil} height="200px" width="180px"></img></Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
         </div>
 
@@ -133,19 +133,19 @@ const Home = () => {
         <h2> Harris Hits</h2><br></br>
         <div class="row">
           <div class="column">
-            <Link to="/Arr1"><img src={harris} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/har1"><img src={harris} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"> <img src={yennai} height="200px" width="180px"></img> </Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/har2"> <img src={yennai} height="200px" width="180px"></img> </Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"> <img src={nanban} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/har3"> <img src={nanban} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"> <img src={thuppaki} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/har4"> <img src={thuppaki} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <Link to="/Arr1"><img src={varanam} height="200px" width="180px"></img></Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <Link to="/har5"><img src={varanam} height="200px" width="180px"></img></Link>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
         </div>
 
@@ -154,22 +154,28 @@ const Home = () => {
         <h2> SaNa Hits</h2><br></br>
         <div class="row">
           <div class="column">
-            <img src={sana} height="200px" width="180px"></img> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <Link to="/san1"> <img src={sana} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <img src={kabali} height="200px" width="180px"></img> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <Link to="/san2"> <img src={kabali} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <img src={mahaan} height="200px" width="180px"></img> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <Link to="/san3">  <img src={mahaan} height="200px" width="180px"></img> </Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <img src={iravi} height="200px" width="180px"></img> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <Link to="/san4"> <img src={iravi} height="200px" width="180px"></img> </Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
           <div class="column">
-            <img src={vada} height="200px" width="180px"></img>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <Link to="/san5"><img src={vada} height="200px" width="180px"></img></Link> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           </div>
         </div>
-        <br></br>
+        <br></br><br></br>
+
+
+
+       <h5 class="h5-home"> Copyright ©2023. All rights reserved by SRTY APP </h5>
+
+       <br></br>
 
 
 

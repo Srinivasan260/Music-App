@@ -1,12 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import './layout.css';
-import loging from './ty.png';
+import loging from './images/ty.png';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'font-awesome/css/font-awesome.min.css';
 
 const Layout = () => {
   const auth = localStorage.getItem('user')
+
+ 
   return (
     <>
       <Container>
@@ -26,17 +28,18 @@ const Layout = () => {
 
 
 
-            <Link to="/" ><i class="bi bi-house" id="li1"></i> Home</Link> <br></br> <br></br>
+            <Link to="/" ><i class="bi bi-house" id="li1"></i> <span id="span-home">Home</span></Link> <br></br> <br></br>
 
 
 
 
-            <Link to="/skills" > <i class="bi bi-bootstrap-reboot" id="li1"></i>  Trending songs </Link><br></br> <br></br>
-
-            <Link to="/App" ><i class="bi bi-gear" id="li1" ></i> Settings</Link> <br></br> <br></br>
+            <Link to="/skills" > <i class="bi bi-bootstrap-reboot" id="li1"></i>  <span id="span-home">Trending songs </span></Link><br></br> <br></br>
+            {auth ? <><Link to="/App" ><i class="bi bi-gear" id="li1" ></i> <span id="span-home">Settings</span></Link> <br></br> <br></br></>:<></> }
 
 
           </nav>
+
+          <h6 id="h6-lay">Follow us &nbsp;&nbsp;<i class="bi bi-instagram" id="insta"></i> &nbsp;&nbsp;<i class="bi bi-facebook"  id="face"></i>&nbsp;&nbsp;<i class="bi bi-twitter"  id="twitter"></i></h6>
 
         </div>
 

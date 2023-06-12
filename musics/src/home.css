@@ -16,6 +16,9 @@ h2 {
     margin-top: 2%;
 
 }
+h2:hover{
+    color:rgb(113, 17, 113)
+}
 
 
 #sign {
@@ -23,6 +26,10 @@ h2 {
     margin-left: 85%;
 
 
+}
+#sign:hover {
+    background-color: rgb(6, 120, 170);
+    color:white;
 }
 
 #logout {
@@ -32,9 +39,18 @@ h2 {
     margin-top: -1%;
 
 }
+#logout:hover{
+    background-color: rgb(6, 120, 170);
+    color:white;
+
+}
 
 #login {
     margin-left: 78%;
+}
+#login:hover{
+    background-color: rgb(6, 120, 170) ;
+    color:white;
 }
 
 #h4 {
@@ -57,4 +73,8 @@ h2 {
 #na {
     margin-top: -2.5%;
     margin-left: 2.5%;
+}
+.h5-home{
+    margin-left: 27%;
+    margin-top: 3%;
 }

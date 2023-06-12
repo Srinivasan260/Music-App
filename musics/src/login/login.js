@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import './login.css'
-import login from './login.png';
+import login from './login3.png';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -20,10 +20,12 @@ const Login = () => {
   }, [])
 
   const onSubmit = async (e) => {
+    e.preventDefault();
     // if (!email || !password) {
     //   setError(true)
     //   return false
     // }else{
+      
 
     console.log("hi")
     console.log(email, password)
@@ -34,6 +36,7 @@ const Login = () => {
         "Content-type": "Application/Json"
       }
     })
+    console.log('8')
     result = await result.json()
     console.log(result)
     alert(result)
@@ -41,7 +44,8 @@ const Login = () => {
       localStorage.setItem('user', JSON.stringify(result));
       navigate('/')
 
-    }
+    
+  }
 
   }
 
@@ -63,16 +67,16 @@ const Login = () => {
                   <Form.Label>Email address</Form.Label>
 
                   <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => { setEmail(e.target.value) }} />
-
+                  {error && !email && <span class="tre">enter the mail id</span>}
                 </Form.Group>
-                {error && !email && <span>enter the maul id</span>}
+                
 
                 <Form.Group className="mb-3" as={Col} md="11" controlId="formBasicPassword">
                   <Form.Label>Password</Form.Label>
                   <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => { setPsw(e.target.value) }} />
-
+                  {error && !password && <span class="tre">enter the password id</span>}
                 </Form.Group>
-                {error && !password && <span>enter the password id</span>}
+                
               </div>
               <Button variant="primary" type="submit" id="btn3" onClick={onSubmit}>
                 Submit

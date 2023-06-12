@@ -1,5 +1,5 @@
 import React from 'react'
-import music from '../ty.png';
+import music from '../images/ty.png';
 import './about.css'
 
 const About = () => {
@@ -22,8 +22,8 @@ const About = () => {
         <h5 id="h5-about"> To know more About us  <a href="https://en.wikipedia.org/wiki/Spotify">Click here</a></h5>
 
         <hr id="about-hr" />
-        <h6 id="h6-ab">Follow us &nbsp;&nbsp;<i class="bi bi-instagram"></i> &nbsp;&nbsp;<i class="bi bi-facebook"></i>&nbsp;&nbsp;<i class="bi bi-twitter"></i></h6>
-        <h6 id="h6-a">Copyright ©2023 TermsFeed®. All rights reserved.</h6>
+        <h6 id="h6-ab">Follow us &nbsp;&nbsp;<i class="bi bi-instagram" id="insta"></i> &nbsp;&nbsp;<i class="bi bi-facebook" id="face"></i>&nbsp;&nbsp;<i class="bi bi-twitter" id="insta"></i></h6>
+        <h6 id="h6-a">Copyright ©2023. All rights reserved.</h6>
 
 
       </div>
