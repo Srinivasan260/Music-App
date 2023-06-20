@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import ani2 from './ani3.webp'
 import './ani.css';
 import music from './ty.png';
-import two from './two.jpg';
+import two3 from './two.jpg';
 import two2 from './2to2.mp3';
 import Ani2 from './ani2';
 import three from './3.jpg';
@@ -21,6 +21,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 const Car1 = () => {
+  const two2 = "https://srini-react.s3.ap-southeast-2.amazonaws.com/2to2.mp3"
 
   return (
     <>
@@ -36,7 +37,7 @@ const Car1 = () => {
       <div id="tw">
         <div class="row" >
           <div class="column">
-            <img src={two} className="img12" width="80px" height="80px"></img>
+            <img src={two3} className="img12" width="80px" height="80px"></img>
           </div>
           <div class="column">
             <h6>Two Two Two |KKK</h6><br></br>
