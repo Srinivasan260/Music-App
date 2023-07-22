@@ -32,4 +32,5 @@ networks:
 volumes:
    mongo-data:
     driver : local   
+    # driver local is used to store the data even if the conatiner can to be removed
       
